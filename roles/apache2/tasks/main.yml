@@ -1,0 +1,15 @@
+---
+# tasks file for apache2
+-
+    name: Tasks to install apache2 in web server
+    apt:
+        name: apache2
+        state: latest
+    notify: restarting apache2
+-
+    name: Copying files
+    copy:
+        src: index.html
+        dest: "{{ dest }}/index.html"
+        mode: 0777
+    notify: restarting apache2

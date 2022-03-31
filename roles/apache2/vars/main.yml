@@ -1,0 +1,3 @@
+---
+# vars file for apache2
+dest: /var/www/html

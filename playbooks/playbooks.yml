@@ -1,0 +1,7 @@
+---
+-
+    name: Installing apache2 using ansible
+    hosts: web_servers
+    become: true
+    roles:
+        - ../roles/apache2
